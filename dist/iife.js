@@ -1,9 +1,9 @@
 "use strict";
-(() => {
+((message) => {
     const superHero = "Batman";
-    console.log(superHero);
-})();
-(() => {
+    console.log(message, superHero);
+})("Hello");
+((message) => {
     const superHero = "Superman";
-    console.log(superHero);
-})();
+    console.log(message, superHero);
+})("hey");
