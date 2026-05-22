@@ -1,13 +1,14 @@
 "use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
 //require("./batman");
 //require("./superman");
-const modulecatching_1 = __importDefault(require("./modulecatching"));
-console.log(modulecatching_1.default.getName());
-modulecatching_1.default.setName("Superman");
-console.log(modulecatching_1.default.getName());
-const modulecatching_2 = __importDefault(require("./modulecatching"));
-console.log(modulecatching_2.default.getName());
+// import SuperHero from "./modulecatching"
+//  console.log(SuperHero.getName());
+//  SuperHero.setName("Superman")
+// console.log(SuperHero.getName())
+Object.defineProperty(exports, "__esModule", { value: true });
+// import NewSuperHero from "./modulecatching";
+// console.log(NewSuperHero.getName());
+const math = require("./math");
+const { add, subtract } = math;
+console.log(math.add(2, 3));
+console.log(math.subtract(2, 3));
