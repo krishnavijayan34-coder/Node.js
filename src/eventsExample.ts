@@ -7,4 +7,4 @@ emitter.on("greet",(name:string):void=>{
     console.log(`Hello ${name}`);
 });
 
-emitter.emit("greet","Krishna");
+emitter.emit("greet","Krishna");  
