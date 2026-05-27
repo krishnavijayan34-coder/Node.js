@@ -13,6 +13,7 @@ const server = http.createServer((req,res)=> {
     };
     res.end(JSON.stringify(data));
 });
+
 //3000 is port number
     server.listen(3000,()=>{
         console.log("server running on port 3000");
