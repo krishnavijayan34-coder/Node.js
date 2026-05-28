@@ -4,8 +4,9 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 const crypto_1 = __importDefault(require("crypto"));
+process.env.UV_THREADPOOL_SIZE = "8";
 //Async version
-const Max_Calls = 3;
+const Max_Calls = 8;
 const start = Date.now();
 for (let i = 0; i < Max_Calls; i++) {
     crypto_1.default.pbkdf2("password", "salt", 100000, 512, "sha512", () => {

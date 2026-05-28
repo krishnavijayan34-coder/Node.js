@@ -1,7 +1,11 @@
 import crypto from "crypto";
 
+
+process.env.UV_THREADPOOL_SIZE = "8";
 //Async version
-const Max_Calls =3;
+
+
+const Max_Calls =8;
 
 const start = Date.now();
 for (let i=0; i <Max_Calls; i++) {
