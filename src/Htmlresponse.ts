@@ -2,7 +2,7 @@ import http from "http";
 import fs from "fs";
 import path from "path";
 const server = http.createServer((req, res) => {
-const name ="Krishna Vijayan P"
+const name:string ="Krishna Vijayan P"
     res.writeHead(200, {
         "Content-Type": "text/html"
         
